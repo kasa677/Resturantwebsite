@@ -1,0 +1,145 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo h1{
+    color: #A80000;
+    font-size: 14px;
+    line-height: normal;
+    font-weight: 600;
+
+}
+.button-main{
+    display: flex;
+    column-gap: 10px;
+
+}
+.middle-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+.middle-nav li a{
+    color: black;
+    font-size: 12px;
+    line-height: normal;
+    text-decoration: none;
+}
+.left-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    font-size: large;
+}
+.left-header a{
+    color: black;
+}
+.left-blog-title{
+    font-weight: 700;
+    color: black;
+    font-size: 16px;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.left-blog-second-title{
+    font-size: 30px;
+    font-weight: 700;
+    color: #A80000;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.left-blog-para{
+    font-weight: 600;
+    font-size: 14px;
+    color: black;
+    line-height: normal;
+}
+.input-main{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+.first-input label{
+    font-weight: 600;
+    font-size: 14px;
+    color: black;
+    line-height: normal;
+
+}
+.button-main .add{
+    color: white;
+    padding: 10px;
+    background: #A80000;
+    border-radius: 3px;
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+}
+.button-main .add [type="radio"]
+{
+    color: black;
+}
+.button-main .book{
+    color: white;
+    padding: 10px;
+    background:black;
+    border-radius: 3px;
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+}
+.img-2 {
+    position: relative;
+}
+.img-2 img{
+    position: absolute;
+    bottom: 40px;
+    transform: rotate3d(1, 1, 1, 45deg);
+}
+.img-main img{
+    transform: rotateY(1deg);
+    animation:img-main 3s infinite;
+    width: 100%;
+}
+.left-header .menu-bar i{
+    display: none;
+
+}
+@media screen and (max-width:991px) {
+    .middle-nav {
+        display: none;
+    }
+    .left-header .menu-bar i{
+        display: block;
+    
+    }
+    .img-main{
+        margin-top: 130px;
+    }
+}
+@media screen and (max-width:761px) {
+    .img-main{
+        margin-top: 0px;
+    }
+}
+@keyframes img-main 
+    {
+        90% {
+          transform: rotate(180deg);}
+      };
+    
